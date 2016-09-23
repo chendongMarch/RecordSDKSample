@@ -3,57 +3,6 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
 
-    <LinearLayout
-        android:id="@+id/title_layout"
-        android:layout_width="match_parent"
-        android:layout_height="49dip"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:layout_alignParentTop="true">
-
-        <ImageView
-            android:id="@+id/title_back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="4dip"
-            android:contentDescription="@string/imageview_content_description"
-            android:padding="10dip"
-            android:src="@drawable/record_cancel_seletor" />
-
-        <View
-            android:layout_width="0dip"
-            android:layout_height="1dip"
-            android:layout_weight="1.0" />
-
-        <CheckBox
-            android:id="@+id/record_camera_led"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/record_camera_flash_led_selector"
-            android:button="@null"
-            android:textColor="@color/white"
-            android:layout_weight="0.00" />
-
-        <CheckBox
-            android:id="@+id/record_camera_switcher"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="35dip"
-            android:background="@drawable/record_camera_switch_selector"
-            android:button="@null" />
-
-
-        <ImageView
-            android:id="@+id/title_next"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="5dip"
-            android:contentDescription="@string/imageview_content_description"
-            android:padding="10dip"
-            android:src="@drawable/record_next_seletor"
-            android:visibility="visible" />
-    </LinearLayout>
-
     <com.march.recordsdk.ui.widget.ProgressView
         android:id="@+id/record_progress"
         android:layout_width="match_parent"
@@ -129,6 +78,59 @@
             android:src="@drawable/record_controller_seletor" />
 
     </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="49dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dip"
+            android:contentDescription="@string/imageview_content_description"
+            android:padding="10dip"
+            android:src="@drawable/record_cancel_seletor" />
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="1dip"
+            android:layout_weight="1.0" />
+
+        <CheckBox
+            android:id="@+id/record_camera_led"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/record_camera_flash_led_selector"
+            android:button="@null"
+            android:textColor="@color/white"
+            android:layout_weight="0.00" />
+
+        <CheckBox
+            android:id="@+id/record_camera_switcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dip"
+            android:background="@drawable/record_camera_switch_selector"
+            android:button="@null" />
+
+
+        <ImageView
+            android:id="@+id/title_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:contentDescription="@string/imageview_content_description"
+            android:padding="10dip"
+            android:src="@drawable/record_next_seletor"
+            android:visibility="visible" />
+    </LinearLayout>
 
 
 </RelativeLayout>

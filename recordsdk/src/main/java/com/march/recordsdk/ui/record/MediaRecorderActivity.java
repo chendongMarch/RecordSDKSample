@@ -506,7 +506,8 @@ public class MediaRecorderActivity extends BaseRecordActivityWrap implements Med
                         mProgressView.invalidate();
                 }
             }
-        } else if (id == R.id.title_back) {
+        }
+        if (id == R.id.title_back) {
             onBackPressed();
         } else if (id == R.id.record_camera_switcher) {
             if (mRecordLed.isChecked()) {
